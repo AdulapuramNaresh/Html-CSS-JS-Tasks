@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+  </head>
+  <body>
+    <script>
+      let Fruits = [];
+      Fruits.unshift("Mango");
+      console.log(Fruits); //-- [ 'Mango' ]
+      Fruits.unshift("Kiwi");
+      console.log(Fruits); //-- [ 'Kiwi', 'Mango' ]
+      Fruits.unshift("Cherry");
+      console.log(Fruits); //-- [ 'Cherry', 'Kiwi', 'Mango' ]
+      Fruits.push("Papaya");
+      console.log(Fruits); // -- [ 'Cherry', 'Kiwi', 'Mango', 'Papaya' ]
+      Fruits.push("PineApple");
+      console.log(Fruits); //-- [ 'Cherry', 'Kiwi', 'Mango', 'Papaya', 'PineApple' ]
+      Fruits.push("Banana");
+      console.log(Fruits); //--[ 'Cherry', 'Kiwi', 'Mango', 'Papaya', 'PineApple', 'Banana' ]
+      Fruits.shift("Cherry");
+      console.log(Fruits); //-- [ 'Kiwi', 'Mango', 'Papaya', 'PineApple', 'Banana' ]
+      Fruits.shift("Kiwi");
+      console.log(Fruits); // -- [ 'Mango', 'Papaya', 'PineApple', 'Banana' ]
+      Fruits.pop("Banana");
+      console.log(Fruits); //-- [ 'Mango', 'Papaya', 'PineApple' ]
+      Fruits.pop("PineApple");
+      console.log(Fruits); //-- [ 'Mango', 'Papaya' ]
+    </script>
+  </body>
+</html>
